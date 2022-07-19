@@ -1,6 +1,9 @@
 #ip_address = input("Type your Ip Address: ")
 #net_mask = input("Type your Net Mask: ")
 
+#terminal colors
+green = "\033[0;32m"
+close = "\033[m"
 
 #ip_address = "192.168.10.1"
 ip_address = input("Type ip address: \n")
@@ -40,5 +43,5 @@ for b in octets:
         
 
 print("----------")
-print(f"ip address: {ip_address} \nmask bits: {bits} \nmask: {net_mask} \noctets: {octets}")
-print("^".rjust(markup+8," "))
+print(f"{green}ip address:{close} {ip_address} \n{green}mask bits:{close} {bits} \n{green}mask:{close} {net_mask} \n{green}octets:{close} {octets}")
+print(f"{green}^{close}".rjust(markup+8," "))
